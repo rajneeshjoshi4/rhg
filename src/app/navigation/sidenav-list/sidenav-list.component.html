@@ -1,0 +1,17 @@
+<mat-nav-list>
+  <!-- <a mat-list-item routerLink="/login" (click)="onClose()">
+    <mat-icon>input</mat-icon>
+    <span class="nav-caption">Login</span>
+  </a> -->
+  <a mat-list-item routerLink="/users" (click)="onClose()">
+    <mat-icon>people</mat-icon>
+    <span class="nav-caption">Users</span>
+  </a>
+
+  <mat-list-item fxHide.gt-xs>
+    <button mat-icon-button (click)="onClose()">
+      <mat-icon>eject</mat-icon>
+      <span class="nav-caption">Logout</span>
+    </button>
+  </mat-list-item>
+</mat-nav-list>

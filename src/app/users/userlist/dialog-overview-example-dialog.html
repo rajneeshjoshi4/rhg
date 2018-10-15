@@ -1,0 +1,46 @@
+<div mat-dialog-title color="primary">Add User </div>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput placeholder="First Name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Last Name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Phone Number">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Email">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Role">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Company Name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Desination">
+  </mat-form-field>
+
+  <!-- <mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field> -->
+
+  <mat-form-field>
+    <mat-select placeholder="Select">
+      <mat-option value="option1">Option1</mat-option>
+      <mat-option value="option2">Option2</mat-option>
+      <mat-option value="option3">Option3</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-raised-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-button mat-raised-button color="primary" cdkFocusInitial>Save</button>
+</div>
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

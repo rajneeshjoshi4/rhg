@@ -1,25 +1,28 @@
 <div mat-dialog-title color="primary">Add User </div>
 <div mat-dialog-content>
-  <mat-form-field>
-    <input matInput placeholder="First Name">
+    <mat-form-field>
+        <input matInput placeholder="User Name" [(ngModel)]="data.name">
+      </mat-form-field>
+      <mat-form-field>
+    <input matInput placeholder="First Name" [(ngModel)]="data.fname">
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Last Name">
+    <input matInput placeholder="Last Name" [(ngModel)]="data.lname">
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Phone Number">
+    <input matInput placeholder="Phone Number" [(ngModel)]="data.phone">
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Email">
+    <input matInput placeholder="Email" [(ngModel)]="data.email">
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Role">
+    <input matInput placeholder="Role" [(ngModel)]="data.role">
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Company Name">
+    <input matInput placeholder="Company Name" [(ngModel)]="data.cname">
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Desination">
+    <input matInput placeholder="Desination" [(ngModel)]="data.desination">
   </mat-form-field>
 
   <!-- <mat-form-field>
@@ -37,7 +40,7 @@
 </div>
 <div mat-dialog-actions>
   <button mat-button mat-raised-button color="warn" (click)="onNoClick()">Cancel</button>
-  <button mat-button mat-raised-button color="primary" cdkFocusInitial>Save</button>
+  <button mat-button mat-raised-button color="primary" [mat-dialog-close]="data" cdkFocusInitial>Save</button>
 </div>
 
 

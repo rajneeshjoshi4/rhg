@@ -1,3 +1,4 @@
+import { UsersService } from './services/users.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -34,7 +35,7 @@ import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.
     FormsModule
   ],
   entryComponents: [DialogOverviewExampleDialog],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

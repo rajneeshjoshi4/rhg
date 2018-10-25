@@ -13,6 +13,7 @@
   </div>
 
   <div>
+    <div *ngFor="let user of ELEMENT_DATA">Rajneesh {{user.fname}}</div>
 
     <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
 
